@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Footer from "./components/Footer";
+import { FaEye } from "react-icons/fa";
 
 import "./App.css";
 
@@ -10,6 +11,8 @@ function App() {
   const [confirmPassword, setconfirmPassword] = useState("");
   const [showError, setShowError] = useState(false);
   const [resumeInfos, setResumeInfos] = useState(false);
+  const [viewPassord1, setViewPassword1] = useState(false);
+  const [viewPassord2, setViewPassword2] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -35,6 +38,7 @@ function App() {
                 setUsername(event.target.value);
               }}
             />
+
             <p>Email</p>
             <input
               type="email"
@@ -47,21 +51,33 @@ function App() {
             <p>Password</p>
             <input
               className={showError && "error"}
-              type="password"
+              type={viewPassord1 ? "text" : "password"}
               placeholder="Ffkge23h85fT"
               value={password}
               onChange={(event) => {
                 setPassword(event.target.value);
               }}
             />
+            <FaEye
+              className="eye1"
+              onClick={() => {
+                setViewPassword1(true);
+              }}
+            />
             <p>Confirm your password</p>
             <input
               className={showError && "error"}
-              type="password"
+              type={viewPassord2 ? "text" : "password"}
               placeholder="Ffkge23h85fT"
               value={confirmPassword}
               onChange={(event) => {
                 setconfirmPassword(event.target.value);
+              }}
+            />
+            <FaEye
+              className="eye2"
+              onClick={() => {
+                setViewPassword2(true);
               }}
             />
             <p className="errorPassword">

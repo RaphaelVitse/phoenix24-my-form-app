@@ -78,6 +78,20 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+.eye1 {
+  color: gray;
+  position: relative;
+  left: -30px;
+  bottom: -2px;
+}
+.eye2 {
+  color: gray;
+  position: relative;
+  left: -30px;
+  bottom: -2px;
+}
+
 /*  Footer */
 
 footer {
