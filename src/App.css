@@ -57,12 +57,18 @@ button {
   color: white;
   font-weight: bold;
 }
+
+.correct {
+  border: 1px solid lightgrey;
+}
 .error {
   border: 1px red solid;
 }
-.errorPassword {
+.errorFalsePassword {
   color: red;
   font-size: 14px;
+  width: 300px;
+  text-align: center;
 }
 
 .show {
