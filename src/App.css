@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: white;
+}
+
+.container {
+  max-width: 500px;
+  /* background: lightskyblue; */
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+form {
+  padding: 0 10px;
+  /* background: lightcoral; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin: 10px 0;
+}
+
+input,
+button {
+  margin-bottom: 20px;
+  height: 45px;
+  width: 300px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid lightgrey;
+}
+
+input {
+  padding-left: 8px;
+  background: #fcf9f9;
+}
+button {
+  margin-top: 30px;
+  cursor: pointer;
+  background: #5c47d3;
+  color: white;
+  font-weight: bold;
+}
+.error {
+  border: 1px red solid;
+}
+.errorPassword {
+  color: red;
+  font-size: 14px;
+}
+
+.show {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+.resumeInfos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*  Footer */
+
+footer {
+  text-align: center;
+  margin: 100px auto 20px auto;
+}
+footer span {
+  font-weight: bold;
+}
